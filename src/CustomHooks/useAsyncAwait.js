@@ -8,7 +8,7 @@ const useAsyncAwait = (url) => {
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const [apiData, setApiData] = useState([]);
-  const moduleCalled = "Data fetched using useAsyncAwait";
+  const moduleCalled = "(fetched using useAsyncAwait)";
 
   const fetchData = async () => {
     setLoading(true);

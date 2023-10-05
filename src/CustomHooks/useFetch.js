@@ -5,7 +5,7 @@ const useFetch = (url) => {
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const [apiData, setApiData] = useState(null);
-  const moduleCalled = "Data fetched using useFetch";
+  const moduleCalled = "(fetched using useFetch)";
 
   // console.log(url);
   // console.log(data);

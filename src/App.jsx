@@ -1,17 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import ApiTest from "./TestHookConnections/ApiTest";
-import ES6_AsyncServerTest from "./TestHookConnections/ES6_AsyncServerTest";
+import { UseAsyncAwaitTestApiUrl } from "./TestHookConnections/useAsyncAwaitTestApiUrl";
+import { UseAsyncAwaitTestServer } from "./TestHookConnections/useAsyncAwaitTestServer";
+import { UseFetchTestApiUrl } from "./TestHookConnections/useFetchTestApiUrl";
+import { UseFetchTestServer } from "./TestHookConnections/useFetchTestServer";
+import { UseMockDataTest } from "./TestHookConnections/useMockDataTest";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <ApiTest />
-      <ES6_AsyncServerTest />
+      <div>
+      <h2>CustomHook test</h2>
+      <p>Check Console for results</p>
+      {/* <UseAsyncAwaitTestApiUrl /> */}
+      {/* <UseAsyncAwaitTestServer /> */}
+      {/* <UseFetchTestApiUrl /> */}
+      {/* <UseFetchTestServer /> */}
+      {/* <UseMockDataTest /> */}
+      </div>
     </>
   );
 }

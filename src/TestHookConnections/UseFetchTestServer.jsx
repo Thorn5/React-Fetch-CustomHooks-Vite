@@ -1,14 +1,12 @@
 // UseFetchTestServer.jsx
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import useFetch from "../CustomHooks/useFetch";
 
 export const UseFetchTestServer = () => {
-  const productUrlComment = "useFetch Product Server: ";
-  const productUrl =
-    "https://express-async-server-es6-mongodb.onrender.com/api/products";
-  const customerUrlComment = "useFetch Customer Server: ";
-  const customerUrl =
-    "https://express-async-server-es6-mongodb.onrender.com/api/customers";
+  const productUrlComment = "Async Product Server:";
+  const productUrl = "https://express-async-server-es6-mongodb.onrender.com/api/products";
+  const customerUrlComment = "Async Customer Server:";
+  const customerUrl = "https://express-async-server-es6-mongodb.onrender.com/api/customers";
 
   const {
     // * fetch product data with useFetch (F_)
@@ -26,25 +24,26 @@ export const UseFetchTestServer = () => {
     moduleCalled: F_cusomerModuleCalled,
   } = useFetch(customerUrl);
 
-  // useEffect(() => {        // * Server/ Router API diagnostics
-  //   // console.clear();
-  //   console.log(
-  //     "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
-  //     "color: #35e859"
-  //   );
-  //   console.log("Server Product", F_productModuleCalled, F_productData);
-  //   console.log("Server Customer", F_cusomerModuleCalled, F_customerData);
-  //   console.log(
-  //     "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
-  //     "color: #35e859"
-  //   );
-  // }, [
-  //   F_productModuleCalled, F_productData, F_customerData,
-  // ]);
+  useEffect(() => {        // * Server/ Router API diagnostics
+    // console.clear();
+    console.log(
+      "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
+      "color: #35e859"
+    );
+    console.log("Product Router", F_productModuleCalled, F_productData);
+    console.log("Customer Router", F_cusomerModuleCalled, F_customerData);
+    console.log(
+      "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
+      "color: #35e859"
+    );
+  }, [
+    F_productModuleCalled, F_cusomerModuleCalled, F_productData, F_customerData,
+  ]);
 
   return (
     <>
-      {F_productLoading ? (
+      <h3>UseFetchTestServer</h3>
+      {/* {F_productLoading ? (
         <p>Loading Products...</p>
       ) : F_productError ? (
         `${F_productError}`
@@ -75,7 +74,7 @@ export const UseFetchTestServer = () => {
               F_cusomerModuleCalled
             )}
         </div>
-      )}
+      )} */}
     </>
   );
 };

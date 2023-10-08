@@ -14,7 +14,12 @@ function App() {
       <div>
         <h1>CustomHook test</h1>
         <h2>Check Console for results of:</h2>
-        <TestAllMethods />
+        {/* <TestAllMethods /> */}
+        {/* <UseAsyncAwaitTestApiUrl /> */}
+        {/* <UseAsyncAwaitTestServer /> */}
+        {/* <UseFetchTestApiUrl /> */}
+        {/* <UseFetchTestServer /> */}
+        {/* <UseMockDataTest /> */}
       </div>
     </>
   );

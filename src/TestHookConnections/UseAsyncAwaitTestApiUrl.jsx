@@ -3,15 +3,15 @@ import { useEffect } from "react";
 import useAsyncAwait from "../CustomHooks/useAsyncAwait";
 
 export const UseAsyncAwaitTestApiUrl = () => {
-    // const urlComment = "API list of APIs:";
-    // const baseUrl = "https://api.publicapis.org"; //
-    // const requestEndpoint = "/entries";
-    // const url = `${baseUrl}${requestEndpoint}`;
+  // const urlComment = "API list of APIs:";
+  // const baseUrl = "https://api.publicapis.org"; //
+  // const requestEndpoint = "/entries";
+  // const url = `${baseUrl}${requestEndpoint}`;
 
-    const urlComment = "Cat API:";
-    const baseUrl = "https://cat-fact.herokuapp.com"; //
-    const requestEndpoint = "/facts";
-    const url = `${baseUrl}${requestEndpoint}`;
+  const urlComment = "Cat API:";
+  const baseUrl = "https://cat-fact.herokuapp.com"; //
+  const requestEndpoint = "/facts";
+  const url = `${baseUrl}${requestEndpoint}`;
 
   const {
     // * API fetch with useAsyncAwait (AA_)
@@ -27,7 +27,7 @@ export const UseAsyncAwaitTestApiUrl = () => {
       "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
       "color: #35e859"
     );
-    console.log("URL_API", urlComment, AA_moduleCalled, AA_apiData);
+    console.log(urlComment, AA_moduleCalled, AA_apiData);
     console.log(
       "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
       "color: #35e859"

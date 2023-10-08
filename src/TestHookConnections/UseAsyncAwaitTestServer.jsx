@@ -30,8 +30,8 @@ export const UseAsyncAwaitTestServer = () => {
       "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
       "color: #35e859"
     );
-    console.log("Product Router", AA_productModuleCalled, AA_productData);
-    console.log("Customer Router", AA_cusomerModuleCalled, AA_customerData);
+    console.log("Product Data", AA_productModuleCalled, AA_productData);
+    console.log("Customer Data", AA_cusomerModuleCalled, AA_customerData);
     console.log(
       "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
       "color: #35e859"

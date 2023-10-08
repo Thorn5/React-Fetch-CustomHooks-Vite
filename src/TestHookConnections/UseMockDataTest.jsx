@@ -17,7 +17,7 @@ export const UseMockDataTest = () => {
       "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
       "color: #35e859"
     );
-    console.log("Product", M_productModuleCalled, M_productData);
+    console.log("Product Data", M_productModuleCalled, M_productData);
     console.log(
       "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
       "color: #35e859"

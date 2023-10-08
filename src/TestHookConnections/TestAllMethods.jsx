@@ -84,13 +84,13 @@ export const TestAllMethods = () => {
             "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
             "color: #35e859"
         );
-        console.log("URL_API", urlComment, AA_moduleCalled, AA_apiData);
-        console.log("Product Router", AA_productModuleCalled, AA_productData);
-        console.log("Customer Router", AA_cusomerModuleCalled, AA_customerData);
-        console.log("URL_API", urlComment, F_moduleCalled, F_apiData);
-        console.log("Product Router", F_productModuleCalled, F_productData);
-        console.log("Customer Router", F_cusomerModuleCalled, F_customerData);
-        console.log("Product", M_productModuleCalled, M_productData);
+        console.log(urlComment, AA_moduleCalled, AA_apiData);
+        console.log("Product Data", AA_productModuleCalled, AA_productData);
+        console.log("Customer Data", AA_cusomerModuleCalled, AA_customerData);
+        console.log(urlComment, F_moduleCalled, F_apiData);
+        console.log("Product Data", F_productModuleCalled, F_productData);
+        console.log("Customer Data", F_cusomerModuleCalled, F_customerData);
+        console.log("Product Data", M_productModuleCalled, M_productData);
         console.log(
             "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
             "color: #35e859"

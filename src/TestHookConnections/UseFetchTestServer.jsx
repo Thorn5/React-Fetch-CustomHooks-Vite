@@ -30,8 +30,8 @@ export const UseFetchTestServer = () => {
       "%c*+*+*+*+*+*+ API useEffect diagnostics *+*+*+*+*+*+",
       "color: #35e859"
     );
-    console.log("Product Router", F_productModuleCalled, F_productData);
-    console.log("Customer Router", F_cusomerModuleCalled, F_customerData);
+    console.log("Product Data", F_productModuleCalled, F_productData);
+    console.log("Customer Data", F_cusomerModuleCalled, F_customerData);
     console.log(
       "%c*+*+*+*+*+*+ /API useEffect diagnostics/ *+*+*+*+*+*+",
       "color: #35e859"

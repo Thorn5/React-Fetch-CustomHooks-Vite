@@ -37,21 +37,20 @@ const useAsyncAwait = (url) => {
 
 export default useAsyncAwait;
 
-// Bring to parent module:
-// const url_builder () {
-//   const baseUrl = "https://whatever";
-//   const requestEndpoint = "/end/point/"
-//   const apiKey = "12345";
-//   const requestParams = `?api_key=${apiKey}`;
-//   const url = `${baseUrl}${requestEndpoint}${requestParams}`;
-// }
-// const single_connection () {
-//   const { loading, error, apiData, moduleCalled } = useAsyncAwait(url);
-// }
-// const multiple_connections () {
-//   const { loading: productLoading, error: productError, apiData: productData, moduleCalled: productModuleCalled, } = useAsyncAwait(productUrl);
-//   const { loading: customerLoading, error: customerError, apiData: customerData, moduleCalled: customerModuleCalled, } = useAsyncAwait(customerUrl);
-// }
-// const test_return () {
-//   return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}
-// }
+For Parent Module:
+// url_builder:
+// const baseUrl = "https://whatever";
+// const requestEndpoint = "/end/point/"
+// const apiKey = "12345";
+// const requestParams = `?api_key=${apiKey}`;
+// const url = `${baseUrl}${requestEndpoint}${requestParams}`;
+
+// single_connection:
+// const { loading, error, apiData, moduleCalled } = useAsyncAwait(url);
+
+// multiple_connections:
+// const { loading: productLoading, error: productError, apiData: productData, moduleCalled: productModuleCalled, } = useAsyncAwait(productUrl);
+// const { loading: customerLoading, error: customerError, apiData: customerData, moduleCalled: customerModuleCalled, } = useAsyncAwait(customerUrl);
+
+// test_return:
+// return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}</>);

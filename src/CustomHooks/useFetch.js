@@ -34,13 +34,20 @@ const useFetch = (url) => {
 
 export default useFetch;
 
-// Bring to parent component:
+For Parent Module:
+// url_builder:
 // const baseUrl = "https://whatever";
 // const requestEndpoint = "/end/point/"
 // const apiKey = "12345";
 // const requestParams = `?api_key=${apiKey}`;
 // const url = `${baseUrl}${requestEndpoint}${requestParams}`;
 
+// single_connection:
 // const { loading, error, apiData, moduleCalled } = useFetch(url);
 
-// return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}</>)
+// multiple_connections:
+// const { loading: productLoading, error: productError, apiData: productData, moduleCalled: productModuleCalled, } = useFetch(productUrl);
+// const { loading: customerLoading, error: customerError, apiData: customerData, moduleCalled: customerModuleCalled, } = useFetch(customerUrl);
+
+// test_return:
+// return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}</>);

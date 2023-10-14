@@ -37,7 +37,7 @@ const useAsyncAwait = (url) => {
 
 export default useAsyncAwait;
 
-For Parent Module:
+// For Parent Module:
 // url_builder:
 // const baseUrl = "https://whatever";
 // const requestEndpoint = "/end/point/"

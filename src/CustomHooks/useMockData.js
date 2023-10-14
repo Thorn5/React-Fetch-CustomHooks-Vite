@@ -9,7 +9,7 @@ export default function useMockData() {
     return { loading, error, apiData, moduleCalled };
 }
 
-For Parent Module:
+// For Parent Module:
 // const { loading, error, apiData, moduleCalled } = useMockData();
 
 // test_return:

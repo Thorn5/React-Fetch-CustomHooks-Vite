@@ -34,7 +34,7 @@ const useFetch = (url) => {
 
 export default useFetch;
 
-For Parent Module:
+// For Parent Module:
 // url_builder:
 // const baseUrl = "https://whatever";
 // const requestEndpoint = "/end/point/"

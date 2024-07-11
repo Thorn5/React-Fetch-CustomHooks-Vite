@@ -1,7 +1,7 @@
 // TestAllMethods.jsx
 import React from 'react'
 import { useEffect } from "react";
-import useAsyncAwait from '../CustomHooks/useAsyncAwait';
+import useAsyncAwait from '../CustomHooks/useAsyncAwait'; 
 import useFetch from '../CustomHooks/useFetch';
 import useMockData from '../CustomHooks/useMockData';
 

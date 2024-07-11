@@ -31,56 +31,6 @@ export const UseAsyncAwaitTestApiUrl = () => {
     AA_apiData, AA_moduleCalled,
   ]);
 
-  // return (
-  //   <>
-  //     <h3>UseAsyncAwaitTestApiUrl</h3>
-  //     {AA_loading ? (
-  //       <p>Loading APIs...</p>
-  //     ) : AA_error ? (
-  //       <p>Error: {AA_error}</p>
-  //     ) : (
-  //       <div>
-  //         {AA_apiData && (
-  //           <>
-  //             {/* Process and display API data here */}
-  //             <p>Fetched API data: {JSON.stringify(AA_apiData)}</p>
-  //             {urlComment && console.log(urlComment, AA_apiData, AA_moduleCalled)} {/* Conditional logging */}
-  //             {(!urlComment || !AA_moduleCalled) && handleMissingVariables()} {/* Warn about missing variables */}
-  //           </>
-  //         )}
-  //       </div>
-  //     )}
-  //   </>
-  // );
-
-//   return (
-//     <>
-//       <h3>UseAsyncAwaitTestApiUrl</h3>
-//       {AA_loading ? (
-//         <p>Loading APIs...</p>
-//       ) : AA_error ? (
-//         <p>Error: {AA_error}</p>
-//       ) : (
-//         <div>
-//           {catFacts.length > 0 && (
-//             <>
-//               {/* Display fetched data */}
-//               <h2>Cat Facts</h2>
-//               <ul>
-//                 {catFacts.map((fact, index) => (
-//                   <li key={index}>{fact}</li>
-//                 ))}
-//               </ul>
-//               {urlComment && console.log(urlComment, AA_apiData, AA_moduleCalled)} {/* Conditional logging */}
-//               {(!urlComment || !AA_moduleCalled) && handleMissingVariables()} {/* Warn about missing variables */}
-//             </>
-//           )}
-//         </div>
-//       )}
-//     </>
-//   );
-// };
-
 return (
   <>
     <h3>UseAsyncAwaitTestApiUrl</h3>

@@ -11,6 +11,3 @@ export default function useMockData() {
 
 // For Parent Module:
 // const { loading, error, apiData, moduleCalled } = useMockData();
-
-// test_return:
-// return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}</>);

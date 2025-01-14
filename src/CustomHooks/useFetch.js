@@ -48,6 +48,3 @@ export default useFetch;
 // multiple_connections:
 // const { loading: productLoading, error: productError, apiData: productData, moduleCalled: productModuleCalled, } = useFetch(productUrl);
 // const { loading: customerLoading, error: customerError, apiData: customerData, moduleCalled: customerModuleCalled, } = useFetch(customerUrl);
-
-// test_return:
-// return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}</>);

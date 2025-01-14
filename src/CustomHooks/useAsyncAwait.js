@@ -51,6 +51,3 @@ export default useAsyncAwait;
 // multiple_connections:
 // const { loading: productLoading, error: productError, apiData: productData, moduleCalled: productModuleCalled, } = useAsyncAwait(productUrl);
 // const { loading: customerLoading, error: customerError, apiData: customerData, moduleCalled: customerModuleCalled, } = useAsyncAwait(customerUrl);
-
-// test_return:
-// return (<>{loading ? (<p>Loading...</p>) : error ? (`${error}`) : (<div>{apiData && console.log(apiData, moduleCalled)}</div>)}</>);
